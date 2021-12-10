@@ -486,7 +486,7 @@ const createTable = controller => {
 							<div class="account__body">
 								<div class="search_img_container">
 									<h1 class="search_img_container-heading">Search For Departures</h1>
-									<img src="http://127.0.0.1:3000/img/png/searchImg.png" class="search_img"/>
+									<img src="/img/png/searchImg.png" class="search_img"/>
 								</div>
 							</div>
 						</div>
@@ -504,7 +504,7 @@ const createTable = controller => {
 							<div class="account__body">
 								<div class="search_img_container">
 									<h1 class="search_img_container-heading">No Departures specified for provide date</h1>
-									<img src="http://127.0.0.1:3000/img/png/searchImg.png" class="search_img"/>
+									<img src="/img/png/searchImg.png" class="search_img"/>
 								</div>
 							</div>
 						</div>

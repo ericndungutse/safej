@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const compression = require('compression');
 
 const depRouter = require('./routes/dep.routes');
 const viewRouter = require('./routes/view.routes');
@@ -48,6 +49,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // COOKIE PARSER
 app.use(cookieParser());
+
+// Compress Response
+app.use(compression());
 
 // ROUTES
 app.use('/', viewRouter);
