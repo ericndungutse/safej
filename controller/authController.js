@@ -20,10 +20,8 @@ const createAndSendToken = (user, statusCode, res) => {
 			Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
 		),
 
-		// // cookie 'll only ve sent on secure connection(HTTPS)
-		// secure: true,
 		// Cookie cannot be accessed or modified in any way by the browser
-		// httpOnly: true,
+		httpOnly: true,
 	};
 
 	if (process.env.NODE_ENV.trim() === 'production')
