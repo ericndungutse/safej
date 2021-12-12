@@ -7,6 +7,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const compression = require('compression');
+const cors = require('cors');
 
 const depRouter = require('./routes/dep.routes');
 const viewRouter = require('./routes/view.routes');
@@ -19,6 +20,10 @@ const globalErrorHandler = require('./controller/errController');
 const app = express();
 
 app.enable('trust proxy');
+
+// Implement Cors
+app.use(cors());
+app.options('*', cors());
 
 // Set Security HTTP Headers
 app.use(helmet());
