@@ -18,6 +18,8 @@ const globalErrorHandler = require('./controller/errController');
 // INITIALIZE EXPRESS APP
 const app = express();
 
+app.enable('trust proxy');
+
 // Set Security HTTP Headers
 app.use(helmet());
 
