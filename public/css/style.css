@@ -288,10 +288,8 @@ body {
 }
 
 .side-nav__icon {
-	width: 2.5rem;
-	height: 2.5rem;
-	fill: var(--color-grey-dark);
 	margin-right: 2rem;
+	font-size: 2.3rem;
 }
 
 .legal {
